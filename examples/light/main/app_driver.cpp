@@ -21,7 +21,7 @@ extern uint16_t light_endpoint_id;
 #define I2C_MASTER_FREQ_HZ 100000
 #define RELAY_ADDR 0x21
 #define MUTE 0x00
-#define MAX_VOLUME 63
+#define MAX_VOLUME 50 // 63 is absolute max
 
 esp_err_t i2c_master_init() {
     i2c_config_t conf;
